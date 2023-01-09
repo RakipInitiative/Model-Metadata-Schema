@@ -1,10 +1,10 @@
 {
   "https://www.bfr.bund.de/kida.schema.json" : {
     "id" : "https://www.bfr.bund.de/kida.schema.json",
-    "name" : "RakipInitiative / Model-Metadata-Schema",
+    "name" : "FSKX Schema 1.04",
     "url" : "https://github.com/RakipInitiative/Model-Metadata-Schema.git",
-    "versions" : [ ],
-    "fileName" : "JsonSchema_AllModels.json"
+    "versions" : null,
+    "fileName" : "modelMetadataSchema104.json"
   },
   "https://example.com/person.schema.json" : {
     "id" : "https://example.com/person.schema.json",
