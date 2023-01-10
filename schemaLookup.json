@@ -26,5 +26,12 @@
     "url" : "https://github.com/BenCGI/test123.git",
     "versions" : null,
     "fileName" : "Anlage 5_DatAFormatProb_v1.0.json"
+  },
+  "https://www.bfr.bund.de/fskx.schema.104.json" : {
+    "id" : "https://www.bfr.bund.de/fskx.schema.104.json",
+    "name" : "FSKX Schema 1.04",
+    "url" : "https://github.com/RakipInitiative/Model-Metadata-Schema.git",
+    "versions" : null,
+    "fileName" : "modelMetadataSchema104.json"
   }
 }
