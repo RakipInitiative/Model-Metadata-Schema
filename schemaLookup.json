@@ -33,5 +33,12 @@
     "url" : "https://github.com/RakipInitiative/Model-Metadata-Schema.git",
     "versions" : null,
     "fileName" : "FSKX_Schema2_1.04.json"
+  },
+  "https://example.com/xsdexample2.schema.json" : {
+    "id" : "https://example.com/xsdexample2.schema.json",
+    "name" : "XSD 2",
+    "url" : "https://github.com/RakipInitiative/Model-Metadata-Schema.git",
+    "versions" : null,
+    "fileName" : "my_xml_schema2.json"
   }
 }
