@@ -1,0 +1,525 @@
+{
+    "$defs": {
+        "ProbenContainerType.MitteilungsgrundContainer": {
+            "type": "object",
+            "properties": {
+                "mitteilungsgrund": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "mitteilungsgrund"
+            ]
+        },
+        "ProbenContainerType.ProjektNrContainer": {
+            "type": "object",
+            "properties": {
+                "projektNr": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "projektNr"
+            ]
+        },
+        "ProbenContainerType.TieralterGruppe": {
+            "type": "object",
+            "properties": {
+                "tieralter": {
+                    "type": "number"
+                },
+                "tieralterEinheit": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "tieralter",
+                "tieralterEinheit"
+            ]
+        },
+        "ProbenContainerType.VerpackungContainer": {
+            "type": "object",
+            "properties": {
+                "verpackung": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "verpackung"
+            ]
+        },
+        "ProbenContainerType.VerschlussContainer": {
+            "type": "object",
+            "properties": {
+                "verschluss": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "verschluss"
+            ]
+        },
+        "ProbenContainerType.ExtProbKennungContainer.ExtProbKennungenGruppe": {
+            "type": "object",
+            "properties": {
+                "extProbKennung": {
+                    "type": "string"
+                },
+                "extProbKennungArt": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "extProbKennung",
+                "extProbKennungArt"
+            ]
+        },
+        "ProbenContainerType.ExtProbKennungContainer": {
+            "type": "object",
+            "properties": {
+                "extProbKennungenGruppe": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "$ref": "#/$defs/ProbenContainerType.ExtProbKennungContainer.ExtProbKennungenGruppe"
+                    }
+                }
+            },
+            "required": [
+                "extProbKennungenGruppe"
+            ]
+        },
+        "ProbenContainerType.KennzeichnungZusatzContainer": {
+            "type": "object",
+            "properties": {
+                "kennzeichnungZusatz": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "kennzeichnungZusatz"
+            ]
+        },
+        "ProbenContainerType.PrimaerprodContainer": {
+            "type": "object",
+            "properties": {
+                "primaerprod": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "primaerprod"
+            ]
+        },
+        "ProbenContainerType.HerkunftUntersuchGutContainer": {
+            "type": "object",
+            "properties": {
+                "herkunftUntersuchGut": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "herkunftUntersuchGut"
+            ]
+        },
+        "ProbenContainerType.ProbBeurteilungContainer": {
+            "type": "object",
+            "properties": {
+                "probBeurteilung": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "probBeurteilung"
+            ]
+        },
+        "ProbenContainerType": {
+            "type": "object",
+            "properties": {
+                "probRefStaNr": {
+                    "type": "string"
+                },
+                "extSystemID": {
+                    "type": "string"
+                },
+                "probNr": {
+                    "type": "string"
+                },
+                "teilprobNr": {
+                    "type": "string"
+                },
+                "relationNr": {
+                    "type": "string"
+                },
+                "relationProbRefStaNr": {
+                    "type": "string"
+                },
+                "probenahmegrund": {
+                    "type": "string"
+                },
+                "mitteilungsgrundContainer": {
+                    "$ref": "#/$defs/ProbenContainerType.MitteilungsgrundContainer"
+                },
+                "projektNrContainer": {
+                    "$ref": "#/$defs/ProbenContainerType.ProjektNrContainer"
+                },
+                "probenahmedatum": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "probenahmegem": {
+                    "type": "string"
+                },
+                "probenahmevorschrift": {
+                    "type": "string"
+                },
+                "tier": {
+                    "type": "string"
+                },
+                "tierrasse": {
+                    "type": "string"
+                },
+                "tieralterGruppe": {
+                    "$ref": "#/$defs/ProbenContainerType.TieralterGruppe"
+                },
+                "matrix": {
+                    "type": "string"
+                },
+                "matrixZusatz": {
+                    "type": "string"
+                },
+                "probBestandUntersuch": {
+                    "type": "string"
+                },
+                "verpackungContainer": {
+                    "$ref": "#/$defs/ProbenContainerType.VerpackungContainer"
+                },
+                "verschlussContainer": {
+                    "$ref": "#/$defs/ProbenContainerType.VerschlussContainer"
+                },
+                "extProbKennungContainer": {
+                    "$ref": "#/$defs/ProbenContainerType.ExtProbKennungContainer"
+                },
+                "angabeHaltbarkeit": {
+                    "type": "string"
+                },
+                "herstellungDatum": {
+                    "type": "string"
+                },
+                "bezeichnungGeoSchutz": {
+                    "type": "string"
+                },
+                "kennzeichnungZusatzContainer": {
+                    "$ref": "#/$defs/ProbenContainerType.KennzeichnungZusatzContainer"
+                },
+                "konzentrationsfaktor": {
+                    "type": "number"
+                },
+                "primaerprodContainer": {
+                    "$ref": "#/$defs/ProbenContainerType.PrimaerprodContainer"
+                },
+                "haltungsform": {
+                    "type": "string"
+                },
+                "betriebsart": {
+                    "type": "string"
+                },
+                "ursprungsstaat": {
+                    "type": "string"
+                },
+                "sitzHerstellerStaat": {
+                    "type": "string"
+                },
+                "sitzHerstellerGem": {
+                    "type": "string"
+                },
+                "sitzInverkehrStaat": {
+                    "type": "string"
+                },
+                "sitzInverkehrGem": {
+                    "type": "string"
+                },
+                "wasserGebiet": {
+                    "type": "string"
+                },
+                "herkunftUntersuchGutContainer": {
+                    "$ref": "#/$defs/ProbenContainerType.HerkunftUntersuchGutContainer"
+                },
+                "weinbauzone": {
+                    "type": "string"
+                },
+                "belastungGebiet": {
+                    "type": "string"
+                },
+                "analyseende": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "probBeurteilungContainer": {
+                    "$ref": "#/$defs/ProbenContainerType.ProbBeurteilungContainer"
+                }
+            },
+            "required": [
+                "probRefStaNr",
+                "probNr",
+                "teilprobNr",
+                "relationProbRefStaNr",
+                "probenahmegrund",
+                "probenahmedatum",
+                "matrix"
+            ]
+        },
+        "DeliveryContainer.Proben": {
+            "type": "object",
+            "properties": {
+                "probenContainer": {
+                    "type": "array",
+                    "minItems": 0,
+                    "items": {
+                        "$ref": "#/$defs/ProbenContainerType"
+                    }
+                }
+            }
+        },
+        "ErgebnisContainerType.DeklarationGehaltGruppe": {
+            "type": "object",
+            "properties": {
+                "deklarationGehalt": {
+                    "type": "number"
+                },
+                "deklarationEinheit": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "deklarationGehalt",
+                "deklarationEinheit"
+            ]
+        },
+        "ErgebnisContainerType.MessunsicherheitGruppe": {
+            "type": "object",
+            "properties": {
+                "messunsicherheit": {
+                    "type": "number"
+                },
+                "messunsicherEinheit": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "messunsicherheit",
+                "messunsicherEinheit"
+            ]
+        },
+        "ErgebnisContainerType": {
+            "type": "object",
+            "properties": {
+                "probRefStaNr": {
+                    "type": "string"
+                },
+                "probRefErgNr": {
+                    "type": "string"
+                },
+                "parameter": {
+                    "type": "string"
+                },
+                "zuordnungFMRecht": {
+                    "type": "string"
+                },
+                "deklarationGehaltGruppe": {
+                    "$ref": "#/$defs/ErgebnisContainerType.DeklarationGehaltGruppe"
+                },
+                "deklarationBezug": {
+                    "type": "string"
+                },
+                "untersuchVerfahren": {
+                    "type": "string"
+                },
+                "messprinzip": {
+                    "type": "string"
+                },
+                "analyseIdent": {
+                    "type": "string"
+                },
+                "analysetyp": {
+                    "type": "string"
+                },
+                "akkredStatus": {
+                    "type": "string"
+                },
+                "einheit": {
+                    "type": "string"
+                },
+                "bezugsparameter": {
+                    "type": "string"
+                },
+                "nachweisgrenze": {
+                    "type": "number"
+                },
+                "bestimmungsgrenze": {
+                    "type": "number"
+                },
+                "ccAlpha": {
+                    "type": "number"
+                },
+                "ccBeta": {
+                    "type": "number"
+                },
+                "ergNumerisch": {
+                    "type": "number"
+                },
+                "wiederfindungsrate": {
+                    "type": "number"
+                },
+                "wiederfindKorrigiert": {
+                    "type": "string"
+                },
+                "ergNichtNumerisch": {
+                    "type": "string"
+                },
+                "messunsicherheitGruppe": {
+                    "$ref": "#/$defs/ErgebnisContainerType.MessunsicherheitGruppe"
+                },
+                "ergBewertung": {
+                    "type": "string"
+                },
+                "verarbeitungsfaktor": {
+                    "type": "string"
+                },
+                "limit": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "probRefStaNr",
+                "probRefErgNr",
+                "parameter",
+                "messprinzip"
+            ]
+        },
+        "DeliveryContainer.Ergebnisse": {
+            "type": "object",
+            "properties": {
+                "ergebnisContainer": {
+                    "type": "array",
+                    "minItems": 0,
+                    "items": {
+                        "$ref": "#/$defs/ErgebnisContainerType"
+                    }
+                }
+            }
+        },
+        "ZusatzContainerType.ZusatzNumerischGruppe": {
+            "type": "object",
+            "properties": {
+                "zusatzNumerisch": {
+                    "type": "number"
+                },
+                "zusatzEinheit": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "zusatzNumerisch",
+                "zusatzEinheit"
+            ]
+        },
+        "ZusatzContainerType": {
+            "type": "object",
+            "properties": {
+                "zusatzRefTyp": {
+                    "type": "string"
+                },
+                "zusatzRefNr": {
+                    "type": "string"
+                },
+                "zusatzArt": {
+                    "type": "string"
+                },
+                "zusatzText": {
+                    "type": "string"
+                },
+                "zusatzNumerischGruppe": {
+                    "$ref": "#/$defs/ZusatzContainerType.ZusatzNumerischGruppe"
+                }
+            },
+            "required": [
+                "zusatzRefTyp",
+                "zusatzRefNr"
+            ]
+        },
+        "DeliveryContainer.ZusatzDaten": {
+            "type": "object",
+            "properties": {
+                "zusatzContainer": {
+                    "type": "array",
+                    "minItems": 0,
+                    "items": {
+                        "$ref": "#/$defs/ZusatzContainerType"
+                    }
+                }
+            }
+        },
+        "DeliveryContainer": {
+            "type": "object",
+            "properties": {
+                "meldendeStelle": {
+                    "type": "string"
+                },
+                "proben": {
+                    "$ref": "#/$defs/DeliveryContainer.Proben"
+                },
+                "ergebnisse": {
+                    "$ref": "#/$defs/DeliveryContainer.Ergebnisse"
+                },
+                "zusatzDaten": {
+                    "$ref": "#/$defs/DeliveryContainer.ZusatzDaten"
+                }
+            },
+            "required": [
+                "meldendeStelle"
+            ]
+        }
+    },
+    "$id": "https://example.com/xsdexample2.schema.json",
+    "$schema": "http://json-schema.org/draft/2020-12/schema",
+    "title": "Example XSD to JSON Schema",
+    "type": "object",
+    "properties": {
+        "deliveryContainer": {
+            "$ref": "#/$defs/DeliveryContainer"
+        }
+    }
+}
