@@ -26,5 +26,12 @@
     "url" : "https://github.com/RakipInitiative/Model-Metadata-Schema.git",
     "versions" : null,
     "fileName" : "modelMetadataSchema104.json"
+  },
+  "https://www.bfr.bund.de/fskx.schema2.104.json" : {
+    "id" : "https://www.bfr.bund.de/fskx.schema2.104.json",
+    "name" : "FSKX Schema 2",
+    "url" : "https://github.com/RakipInitiative/Model-Metadata-Schema.git",
+    "versions" : null,
+    "fileName" : "FSKX_Schema2_1.04.json"
   }
 }
