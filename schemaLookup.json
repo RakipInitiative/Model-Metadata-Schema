@@ -1,25 +1,4 @@
 {
-  "https://www.bfr.bund.de/kida.schema.json" : {
-    "id" : "https://www.bfr.bund.de/kida.schema.json",
-    "name" : "RakipInitiative / Model-Metadata-Schema",
-    "url" : "https://github.com/RakipInitiative/Model-Metadata-Schema.git",
-    "versions" : [ ],
-    "fileName" : "JsonSchema_AllModels.json"
-  },
-  "https://example.com/person.schema.json" : {
-    "id" : "https://example.com/person.schema.json",
-    "name" : "Example Mini",
-    "url" : "https://github.com/BenCGI/test123.git",
-    "versions" : null,
-    "fileName" : "miniexample.json"
-  },
-  "https://example.com/xsdexample.schema.json" : {
-    "id" : "https://example.com/xsdexample.schema.json",
-    "name" : "XSD Example",
-    "url" : "https://github.com/BenCGI/test123.git",
-    "versions" : null,
-    "fileName" : "Anlage 5_DatAFormatProb_v1.0.json"
-  },
   "https://www.bfr.bund.de/fskx.schema.104.json" : {
     "id" : "https://www.bfr.bund.de/fskx.schema.104.json",
     "name" : "FSKX Schema 1.04",
@@ -27,18 +6,11 @@
     "versions" : null,
     "fileName" : "modelMetadataSchema104.json"
   },
-  "https://www.bfr.bund.de/fskx.schema2.104.json" : {
-    "id" : "https://www.bfr.bund.de/fskx.schema2.104.json",
-    "name" : "FSKX Schema 2",
+  "https://raw.githubusercontent.com/RakipInitiative/Model-Metadata-Schema/main/genericModelMetadataSchema_1.04.json" : {
+    "id" : "https://raw.githubusercontent.com/RakipInitiative/Model-Metadata-Schema/main/genericModelMetadataSchema_1.04.json",
+    "name" : "Generic Model-Metadata-Schema",
     "url" : "https://github.com/RakipInitiative/Model-Metadata-Schema.git",
     "versions" : null,
-    "fileName" : "FSKX_Schema2_1.04.json"
-  },
-  "https://example.com/xsdexample2.schema.json" : {
-    "id" : "https://example.com/xsdexample2.schema.json",
-    "name" : "XSD 2",
-    "url" : "https://github.com/RakipInitiative/Model-Metadata-Schema.git",
-    "versions" : null,
-    "fileName" : "my_xml_schema2.json"
+    "fileName" : "genericModelMetadataSchema_104.json"
   }
 }
