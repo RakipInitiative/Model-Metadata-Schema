@@ -12,5 +12,12 @@
     "url" : "https://github.com/RakipInitiative/Model-Metadata-Schema.git",
     "versions" : null,
     "fileName" : "genericModelMetadataSchema_104.json"
+  },
+  "https://example.com/xsdexample.schema.json" : {
+    "id" : "https://example.com/xsdexample.schema.json",
+    "name" : "XSD Example",
+    "url" : "https://github.com/BenCGI/test123.git",
+    "versions" : null,
+    "fileName" : "Anlage 5_DatAFormatProb_v1.0.json"
   }
 }
