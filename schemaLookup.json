@@ -13,6 +13,13 @@
     "versions" : null,
     "fileName" : "genericModelMetadataSchema_104.json"
   },
+  "https://raw.githubusercontent.com/RakipInitiative/Model-Metadata-Schema/main/UTX-Json-Schema-20230403-vD.json" : {
+    "id" : "https://raw.githubusercontent.com/RakipInitiative/Model-Metadata-Schema/main/UTX-Json-Schema-20230403-vD.json",
+    "name" : "UTX JSON Schema vD",
+    "url" : "https://github.com/RakipInitiative/Model-Metadata-Schema.git",
+    "versions" : null,
+    "fileName" : "UTX-Json-Schema-20230403-vD.json"
+  },
   "https://example.com/xsdexample.schema.json" : {
     "id" : "https://example.com/xsdexample.schema.json",
     "name" : "XSD Example",
