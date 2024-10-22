@@ -1,0 +1,284 @@
+{
+	"@context": {
+		"modelType":"http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000044",
+		"generalInformation": {
+			"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000003",
+			"@context": {
+				"name": "http://purl.org/dc/terms/title",
+				"source": "http://purl.org/dc/terms/source",
+				"identifier": "http://purl.org/dc/terms/identifier",
+				"author": {
+					"@id": "https://schema.org/author",
+					"@context": {
+						"title": "https://schema.org/jobTitle",
+						"familyName": "https://schema.org/familyName",
+						"givenName": "https://schema.org/givenName",
+						"email": "https://schema.org/email",
+						"telephone": "https://schema.org/telephone",
+						"streetAddress": "https://schema.org/streetAddress",
+						"country": "https://schema.org/addressCountry",
+						"zipCode": "https://schema.org/postalCode",
+						"region": "https://schema.org/addressRegion",
+						"timeZone": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000045",
+						"gender": "https://schema.org/gender",
+						"note": "http://www.w3.org/2000/01/rdf-schema#comment",
+						"organization": "https://schema.org/affiliation"
+					}
+				},
+				"creator": {
+					"@id": "http://purl.org/dc/terms/creator",
+					"@context": {
+						"title": "https://schema.org/jobTitle",
+						"familyName": "https://schema.org/familyName",
+						"givenName": "https://schema.org/givenName",
+						"email": "https://schema.org/email",
+						"telephone": "https://schema.org/telephone",
+						"streetAddress": "https://schema.org/streetAddress",
+						"country": "https://schema.org/addressCountry",
+						"zipCode": "https://schema.org/postalCode",
+						"region": "https://schema.org/addressRegion",
+						"timeZone": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000045",
+						"gender": "https://schema.org/gender",
+						"note": "http://www.w3.org/2000/01/rdf-schema#comment",
+						"organization": "https://schema.org/affiliation"
+					}
+				},
+				"creationDate": "http://purl.org/dc/terms/created",
+				"modificationDate": "http://purl.org/dc/terms/modified",
+				"rights": "http://purl.org/dc/terms/rights",
+				"availability": "http://purl.org/dc/terms/accessRights",
+				"url": "https://schema.org/url",
+				"format": "http://purl.org/dc/terms/format",
+				"reference": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000004",
+					"@context": {
+						"isReferenceDescription": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000046",
+						"title": "http://purl.org/dc/terms/title",
+						"doi": "http://purl.org/dc/terms/identifier",
+						"publicationType": "http://purl.org/dc/terms/type",
+						"date": "https://schema.org/datePublished",
+						"pmid": "http://purl.org/dc/terms/identifier",
+						"authorList": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000021",
+						"abstract": "http://purl.org/dc/terms/abstract",
+						"journal": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000047",
+						"volume": "https://schema.org/volumeNumber",
+						"issue": "https://schema.org/issueNumber",
+						"status": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_00000000486",
+						"website": "https://schema.org/url",
+						"comment": "https://schema.org/comment"
+					}
+				},
+				"language": "http://purl.org/dc/terms/language",
+				"software": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000049",
+				"languageWrittenIn": "https://schema.org/programmingLanguage",
+				"modelCategory": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000005",
+					"@context": {
+						"modelClass": "http://purl.org/dc/terms/type",
+						"modelSubClass": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000050",
+						"modelClassComment": "https://schema.org/comment",
+						"basicProcess": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000051"
+					}
+				},
+				"status": "http://purl.obolibrary.org/obo/IAO_0000114",
+				"objective": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000052",
+				"description": "http://purl.org/dc/terms/description"
+			}
+		},
+		"scope": {
+			"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000006",
+			"@context": {
+				"product": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000007",
+					"@context": {
+						"name": "https://schema.org/name",
+						"description": "http://purl.org/dc/terms/description",
+						"unit": "https://schema.org/unitText",
+						"method": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000022",
+						"packaging": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000023",
+						"treatment": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000024",
+						"originCountry": "https://schema.org/countryOfOrigin",
+						"originArea": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000025",
+						"fisheriesArea": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000026",
+						"productionDate": "https://schema.org/productionDate",
+						"expiryDate": "https://schema.org/expires"
+					}
+				},
+				"hazard": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000008",
+					"@context": {
+						"type": "http://purl.org/dc/terms/type",
+						"name": "https://schema.org/name",
+						"description": "http://purl.org/dc/terms/description",
+						"unit": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000027",
+						"adverseEffect": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000053",
+						"sourceOfContamination": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000054",
+						"benchmarkDose": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000055",
+						"maximumResidueLimit": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000056",
+						"noObservedAdverseAffectLevel": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000057",
+						"lowestObservedAdverseAffectLevel": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000058",
+						"acceptableOperatorsExposureLevel": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000059",
+						"acuteReferenceDose": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000060",
+						"acceptableDailyIntake": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000061",
+						"indSum": "http://id.zbmed.de/fskxo/0000026"
+					}
+				},
+				"populationGroup": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000009",
+					"@context": {
+						"name": "https://schema.org/name",
+						"targetPopulation": "http://purl.org/dc/terms/type",
+						"populationSpan": "http://purl.org/dc/terms/temporal",
+						"populationDescription": "http://purl.org/dc/terms/description",
+						"populationAge": "https://schema.org/typicalAgeRange",
+						"populationGender": "https://schema.org/gender",
+						"bmi": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000062",
+						"specialDietGroups": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000063",
+						"patternConsumption": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000064",
+						"region": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000029",
+						"country": "http://purl.org/dc/terms/spatial",
+						"populationRiskFactor": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000056",
+						"season": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000066"
+					}
+				},
+				"generalComment": "https://schema.org/comment",
+				"temporalInformation": "http://purl.org/dc/terms/temporal",
+				"spatialInformation": "http://purl.org/dc/terms/spatial"
+			}
+		},
+		"dataBackground": {
+			"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000010",
+			"@context": {
+				"study": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000011",
+					"@context": {
+						"identifier": "http://purl.org/dc/terms/identifier",
+						"title": "http://purl.org/dc/terms/title",
+						"description": "http://purl.org/dc/terms/description",
+						"designType": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000067",
+						"assayMeasurementType": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000068",
+						"assayTechnologyType": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000030",
+						"assayTechnologyPlatform": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000069",
+						"accreditationProcedureForTheAssayTechnology": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000031",
+						"protocolName": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000070",
+						"protocolType": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000071",
+						"protocolDescription": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000072",
+						"protocolURI": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000073",
+						"protocolVersion": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000074",
+						"protocolParametersName": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000075",
+						"protocolComponentsName": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000076",
+						"protocolComponentsType": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000077"
+					}
+				},
+				"studySample": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000012",
+					"@context": {
+						"sampleName": "https://schema.org/identifier",
+						"protocolOfSampleCollection": "http://purl.obolibrary.org/obo/HSO_0000288",
+						"samplingStrategy": "http://purl.obolibrary.org/obo/HSO_0000304",
+						"typeOfSamplingProgram": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000032",
+						"samplingMethod": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000033",
+						"samplingPlan": "http://purl.obolibrary.org/obo/HSO_0000331",
+						"samplingWeight": "http://purl.obolibrary.org/obo/HSO_0000357",
+						"samplingSize": "https://schema.org/size",
+						"lotSizeUnit": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000034",
+						"samplingPoint": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000035"
+					}
+				},
+				"dietaryAssessmentMethod": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000013",
+					"@context": {
+						"collectionTool": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000078",
+						"numberOfNonConsecutiveOneDay": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000079",
+						"softwareTool": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000080",
+						"numberOfFoodItems": "http://purl.org/dc/terms/extent",
+						"recordTypes": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000036",
+						"foodDescriptors": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000037"
+					}
+				},
+				"laboratory": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000014",
+					"@context": {
+						"accreditation": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000038",
+						"name": "https://schema.org/name",
+						"country": "http://purl.org/dc/terms/spatial"
+					}
+				},
+				"assay": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000015",
+					"@context": {
+						"name": "https://schema.org/name",
+						"description": "http://purl.org/dc/terms/description",
+						"moisturePercentage": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000081",
+						"fatPercentage": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000082",
+						"detectionLimit": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000083",
+						"quantificationLimit": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000084",
+						"leftCensoredData": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000085",
+						"contaminationRange": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000086",
+						"uncertaintyValue": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000087"
+					}
+				}
+			}
+		},
+		"modelMath": {
+			"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000016",
+			"@context": {
+				"parameter": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000017",
+					"@context": {
+						"id": "http://purl.org/dc/terms/identifier",
+						"classification": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000039",
+						"name": "https://schema.org/name",
+						"description": "http://purl.org/dc/terms/description",
+						"unit": "https://schema.org/unitText",
+						"unitCategory": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000040",
+						"dataType": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000041",
+						"source": "http://purl.org/dc/terms/source",
+						"subject": "http://purl.org/dc/terms/subject",
+						"distribution": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000042",
+						"value": "https://schema.org/value",
+						"reference": "http://purl.org/dc/terms/source",
+						"variabilitySubject": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000088",
+						"minValue": "https://schema.org/minValue",
+						"maxValue": "http://schema.org/maxValue",
+						"error": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000089"
+					}
+				},
+				"qualityMeasures": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000018",
+					"@context": {
+						"sse": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000090",
+						"mse": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000091",
+						"rmse": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000092",
+						"rsquared": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000093",
+						"aic": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000094",
+						"bic": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000095",
+						"sensitivityAnalysis": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000096"
+					}
+				},
+				"modelEquation": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000019",
+					"@context": {
+						"name": "https://schema.org/name",
+						"modelEquationClass": "http://purl.org/dc/terms/type",
+						"reference": "http://purl.org/dc/terms/source",
+						"modelEquation": "http://purl.org/dc/terms/references",
+						"modelHypothesis": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000097"
+					}
+				},
+				"fittingProcedure": "http://id.zbmed.de/fskxo/0000041",
+				"exposure": {
+					"@id": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000020",
+					"@context": {
+						"treatment": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000098",
+						"contamination": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000099",
+						"type": "http://purl.org/dc/terms/type",
+						"scenario": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000100",
+						"uncertaintyEstimation": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000101"
+					}
+				},
+				"event": "http://semanticlookup.zbmed.de/km/fskxo/FSKXO_0000000102"
+			}
+		}
+	}
+}
